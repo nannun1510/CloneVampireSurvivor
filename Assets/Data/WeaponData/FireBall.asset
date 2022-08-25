@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: FireBall
   stats:
-    damage: 50
+    damage: 10
     timeToAttack: 0.8
   weaponBasePrefab: {fileID: 6493730668658163521, guid: 9036f2e8a8e345246b2f72a493b13986, type: 3}
+  upgrades:
+  - {fileID: 11400000, guid: fdf49ca7a2736814cb65fd4e7c70db1e, type: 2}
+  - {fileID: 11400000, guid: f74e88d958ebfdb4f92d59917ccc060a, type: 2}
+  - {fileID: 11400000, guid: dd915500ec6560649b02d39c38cf7f1e, type: 2}
