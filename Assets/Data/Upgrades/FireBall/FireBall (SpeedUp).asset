@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: FireBall (SpeedUp)
   m_EditorClassIdentifier: 
   upgradeType: 0
-  Name: FireBall-SpeedUp
+  NameOfSkill: FireBallSpeedUp
   icon: {fileID: 21300000, guid: cbcf5a5ab4c1e614191c77ea55853867, type: 3}
   weaponData: {fileID: 11400000, guid: 025fdecfb490eca4f8f32a887f1a4cdb, type: 2}

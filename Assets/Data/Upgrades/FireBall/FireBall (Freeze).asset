@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5c4ce52a9d79b841a08c6575bcda804, type: 3}
-  m_Name: TestUpgrade2
+  m_Name: FireBall (Freeze)
   m_EditorClassIdentifier: 
   upgradeType: 0
-  NameOfSkill: test2
-  icon: {fileID: 21300000, guid: 03944abb5ba5cf249bcd07ce20ca8c79, type: 3}
-  weaponData: {fileID: 0}
+  NameOfSkill: FireBallFreezeUp
+  icon: {fileID: 21300000, guid: 92b24735e424b5745ac3e0fa5968a8c9, type: 3}
+  weaponData: {fileID: 11400000, guid: 025fdecfb490eca4f8f32a887f1a4cdb, type: 2}

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: TestUpgrad1
   m_EditorClassIdentifier: 
   upgradeType: 0
-  Name: Test 1
+  NameOfSkill: test1
   icon: {fileID: 21300000, guid: b0c40a007475090489d3cfd0fe7918ad, type: 3}
+  weaponData: {fileID: 0}

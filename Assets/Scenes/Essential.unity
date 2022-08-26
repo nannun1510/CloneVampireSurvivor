@@ -2356,6 +2356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponObjectsContainer: {fileID: 1083523650}
   startingWeapon: {fileID: 11400000, guid: f0a585c69b1229a4c9a2cae7eb046947, type: 2}
+  FireBallPPUp: 0
 --- !u!1 &746932397
 GameObject:
   m_ObjectHideFlags: 0

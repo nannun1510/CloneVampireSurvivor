@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: FireBall (PowerUp)
   m_EditorClassIdentifier: 
   upgradeType: 0
-  Name: FireBall-PowerUp
+  NameOfSkill: FireBallPowerUp
   icon: {fileID: 21300000, guid: 4f4ad52e8d1fade41a56e33772adfd81, type: 3}
   weaponData: {fileID: 11400000, guid: 025fdecfb490eca4f8f32a887f1a4cdb, type: 2}

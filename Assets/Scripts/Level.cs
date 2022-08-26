@@ -62,7 +62,7 @@ public class Level : MonoBehaviour
         }
         selectedUpgrades.Clear();
         selectedUpgrades.AddRange(GetUpgrades(4));
-
+        // Debug.Log(selectedUpgrades);
         upgradePanelManager.OpenPanel(selectedUpgrades);
         experience -= TO_LEVEL_UP;
         level += 1;
@@ -89,7 +89,7 @@ public class Level : MonoBehaviour
     public void Upgrade(int selectedUpgradesId)
     {
         UpgradeData upgradeData = selectedUpgrades[selectedUpgradesId];
-
+        
         if (acquiredUpgrades == null)
         {
             acquiredUpgrades = new List<UpgradeData>();
@@ -97,6 +97,7 @@ public class Level : MonoBehaviour
 
         switch (upgradeData.upgradeType){
             case UpgradeType.WeaponUpgrade:
+            weaponManager.UpgradeWeaponStat(upgradeData.NameOfSkill);
                 break;
             case UpgradeType.ItemUpgrade:
                 break;

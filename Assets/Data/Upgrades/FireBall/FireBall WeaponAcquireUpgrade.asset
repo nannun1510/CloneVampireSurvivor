@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: FireBall WeaponAcquireUpgrade
   m_EditorClassIdentifier: 
   upgradeType: 2
-  Name: Fireball
+  NameOfSkill: FireBallAcquire
   icon: {fileID: 21300000, guid: d45f91830a1ae494b9223500e555d547, type: 3}
   weaponData: {fileID: 11400000, guid: 025fdecfb490eca4f8f32a887f1a4cdb, type: 2}

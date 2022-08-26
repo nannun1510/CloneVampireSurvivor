@@ -7,6 +7,7 @@ public class Fireball : WeaponBase
 {
 
     Playermove playerMove;
+    WeaponManager weaponManager;
     LetFireballProjectile letFireballProjectile;
 
     [SerializeField] GameObject fireballPrefab;
@@ -14,15 +15,32 @@ public class Fireball : WeaponBase
     private void Awake()
     {
         playerMove = GetComponentInParent<Playermove>();
+        weaponManager = GetComponentInParent<WeaponManager>();
     }
 
+    int DMG = 0;
+    float SPD = 10f;
+    int PowerUpDMG = 0;
+    float PercentageDMG = 1f;
     public override void Attack()
     {
-        //Debug.Log(weaponStats.damage);
         GameObject letFireball = Instantiate(fireballPrefab);
         letFireball.transform.position = transform.position;
-        letFireball.GetComponent<LetFireballProjectile>().SetStat(weaponStats.damage,10f);
+        DPSCalculate(weaponStats.damage, weaponStats.timeToAttack);
+        letFireball.GetComponent<LetFireballProjectile>().SetStat(DMG,SPD);
         letFireball.GetComponent<LetFireballProjectile>().SetDirection(playerMove.lastHorizontalVector, 0f);
+    }
+
+    public void FireBallPowerUp(){
+        if(weaponManager.FireBallPPUp == true){
+            PowerUpDMG = PowerUpDMG + 10;
+            weaponManager.FireBallPPUp = false;
+        }
+    }
+    
+    public void DPSCalculate(int BaseDPS,float BaseSPD){
+        FireBallPowerUp();
+        DMG = (int)((BaseDPS + PowerUpDMG)*PercentageDMG);
     }
 }
 

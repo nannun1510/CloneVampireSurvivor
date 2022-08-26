@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5c4ce52a9d79b841a08c6575bcda804, type: 3}
-  m_Name: FireBall (Stun)
+  m_Name: TestUpgrade4
   m_EditorClassIdentifier: 
   upgradeType: 0
-  Name: FireBall-Stun
-  icon: {fileID: 21300000, guid: 559496a4aafb6e24290856e2bd7e1767, type: 3}
-  weaponData: {fileID: 11400000, guid: 025fdecfb490eca4f8f32a887f1a4cdb, type: 2}
+  NameOfSkill: test4
+  icon: {fileID: 21300000, guid: fc837e4a8dda61d4ab8eb74a4c77a2bd, type: 3}
+  weaponData: {fileID: 11400000, guid: f0a585c69b1229a4c9a2cae7eb046947, type: 2}
