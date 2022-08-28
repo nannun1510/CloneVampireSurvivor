@@ -20,6 +20,7 @@ public abstract class WeaponBase : MonoBehaviour
             Attack();
             timer = timeToAttack;
         }
+        CheckUpdateSkill();
     }
 
     public virtual void SetData(WeaponData wd)
@@ -31,9 +32,12 @@ public abstract class WeaponBase : MonoBehaviour
     }
 
     public abstract void Attack();
+    public abstract void CheckUpdateSkill();
 
     public virtual void PostDamage(int damage, Vector3 targetPosition)
     {
         MessageSystem.instance.PostMessage(damage.ToString(), targetPosition);
     }
+
+
 }

@@ -32,6 +32,10 @@ public class WhipWeapon : WeaponBase
         }
     }
 
+    public override void CheckUpdateSkill(){
+        
+    }
+
     public override void Attack()
     {
         if (playerMove.lastHorizontalVector > 0)
