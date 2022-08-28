@@ -34,6 +34,8 @@ public class WeaponManager : MonoBehaviour
         if (NameOfSkill == "FireBallPowerUp"){
             Debug.Log("POWER UP !!!");
             FireBallPPUp = true;
+            
+            
         }
         else if (NameOfSkill == "FireBallSpeedUp"){
             Debug.Log("SPD UP !!!");
